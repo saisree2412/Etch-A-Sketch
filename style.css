@@ -1,0 +1,38 @@
+body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px; /* Adjust as needed based on your design */
+        }
+
+        .grid-square {
+            flex: 0 0 calc(100% / 20); /* Calculate the width based on the number of squares in a row */
+            aspect-ratio: 1; 
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .grid-square:hover {
+            background-color: red;
+
+        }
+
+        #newGridButton {
+            
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
